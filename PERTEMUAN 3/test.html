@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulasi Array</title>
+</head>
+<body>
+
+    <h1>Manipulasi Array dalam JavaScript</h1>
+
+    <!-- Masalah 1 -->
+    <h2>Masalah 1: Mengurutkan Array</h2>
+    <p>Lihat konsol untuk hasil pengurutan array.</p>
+
+    <script>
+        // Masalah 1: Mengurutkan Array
+        console.log("=== Masalah 1: Mengurutkan Array ===");
+
+        const angka1 = [20, 10, 3, 30, 58, 42, 6, 9];
+        const huruf = ['z', 'a', 'c', 'g', 'p'];
+
+        // Mengurutkan angka dalam urutan menaik
+        const sortedAngka = angka1.sort((a, b) => a - b);
+        console.log("Angka terurut: ", sortedAngka); // Output: [3, 6, 9, 10, 20, 30, 42, 58]
+
+        // Mengurutkan huruf dalam urutan alfabet
+        const sortedHuruf = huruf.sort();
+        console.log("Huruf terurut: ", sortedHuruf); // Output: ['a', 'c', 'g', 'p', 'z']
+    </script>
+
+    <!-- Masalah 2 -->
+    <h2>Masalah 2: Menyaring Bilangan Genap</h2>
+    <p>Lihat konsol untuk hasil penyaringan bilangan genap.</p>
+
+    <script>
+        // Masalah 2: Menyaring Bilangan Genap
+        console.log("=== Masalah 2: Menyaring Bilangan Genap ===");
+
+        const angka2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        
+        // Menyaring bilangan genap
+        const evenNumbers = angka2.filter(num => num % 2 === 0);
+        console.log("Bilangan genap: ", evenNumbers); // Output: [2, 4, 6, 8]
+    </script>
+
+    <!-- Masalah 3 -->
+    <h2>Masalah 3: Mengecek Ganjil/Genap</h2>
+    <p>Lihat konsol untuk hasil pengecekan apakah bilangan tersebut ganjil atau genap.</p>
+
+    <script>
+        // Masalah 3: Mengecek Ganjil/Genap
+        console.log("=== Masalah 3: Mengecek Ganjil/Genap ===");
+
+        const angka3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        // Mengecek apakah tiap bilangan genap (true) atau ganjil (false)
+        const checkEvenOdd = angka3.map(num => num % 2 === 0);
+        console.log("Pengecekan Ganjil/Genap: ", checkEvenOdd); 
+        // Output: [false, true, false, true, false, true, false, true, false]
+    </script>
+
+</body>
+</html>
