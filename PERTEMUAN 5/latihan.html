@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Event Klik dengan Border</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s ease;
+        }
+
+        .border-flash {
+            border: 2px solid red; 
+        }
+    </style>
+</head>
+<body>
+    <button id="flash-button">Click Me</button>
+
+    <script>
+        const flashButton = document.getElementById("flash-button");
+
+        flashButton.addEventListener("click", function() {
+            
+            flashButton.classList.add("border-flash");
+
+        
+            setTimeout(function() {
+                flashButton.classList.remove("border-flash");
+            }, 500);
+        });
+    </script>
+</body>
+</html>
