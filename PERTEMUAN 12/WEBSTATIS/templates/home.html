@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>STIKOM PGRI BANYUWANGI</title>
+</head>
+<body>
+    <nav>
+        <a href="main">Home</a> |
+        <a href="Jurusan">Jurusan</a> |
+        <a href="Kontak">Kontak</a> |
+        <a href="Tentang Kami">Tentang Kami</a>
+    </nav>
+    <header style="text-align: center;">
+        <img src="{{ url_for('static', filename='img/Logostikom.png') }}" width="500" height="200" style="border-radius: 50%;">
+        <h1>STIKOM PGRI Banyuwangi</h1>
+    </header>
+    <article style="text-align: center;">
+        <h2>Tentang STIKOM</h2>
+        <p>
+            STIKOM PGRI BANYUWANGI Mempunyai 2 program studi <br>
+            Teknik Informatika dan Manajemen Informatika Yang Memberikan <br>
+            Bekal Mata Kuliah Pemrograman Sbb :
+        </p>
+    </article>
+    <div style="max-width: 600px; margin: 0em auto;">
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th colspan="2">Manajemen Informatika & Teknik Informatika</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>HTML (Expert)</li>
+                            <li>CSS (Beginner)</li>
+                            <li>JavaScript (Beginner)</li>
+                            <li>Python (Expert)</li>
+                            <li>React Native (Beginner)</li>
+                            <li>Node.js (Beginner)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <img src="{{ url_for('static',filename='img/html.jpg')}}" width="50" height="50" style="border-radius: 50%;">
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: center;">
+            &copy; STIKOM PGRI Banyuwangi
+        </p>
+    </div>
+</body>
+</html>
