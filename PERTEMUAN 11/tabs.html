@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membuat Widget Tabs Dengan Jquery UI</title>
+    <script type="text/javascript" src="/PERTEMUAN 11/jquery.js"></script>
+    <script type="text/javascript" src="/PERTEMUAN 11/jquery-ui/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="/PERTEMUAN 11/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/PERTEMUAN 11/style.css">
+</head>
+<body>
+    <h1>Membuat Widget Tabs Dengan Jquery UI</h1>
+    <ul>
+        <li><a href="#tabs-pertama">Tutorial</a></li>
+        <li><a href="#tabs-kedua">Jquery UI</a></li>
+        <li><a href="#tabs-ketiga">STIKOM</a></li>
+    </ul>
+    <div id="tabs-pertama">
+        <p>Tutorial Jquery UI - Membuat Widget Tabs Dengan Jquery UI. Ini merupakan tab pertama.
+        Di tandai dengan tabs masing-masing sesuai id. Widget tab berguna untuk memberikan pengelompokan pada data dan banyak lagi kegunaan lainnya.</p>
+    </div>
+    <div id="tabs-kedua">
+        <p>STIKOM adalah sebuah Perguruan Tinggi di bidang informatika yang membekali mahasiswanya dengan beberapa matakuliah antara lain pemrograman dasar, 
+        pemrograman lanjut, jaringan komputer. Selain itu STIKOM menyediakan tutorial-tutorial berkualitas dan diharapkan dapat membantu 
+        mahasiswa yang membaca tutorial di perpustakaan dalam mempelajari pemrograman web, mobile maupun desktop.</p>
+    </div>
+    <div id="tabs-ketiga">
+        <ul>
+            <li>Web Programming</li>
+            <li>UX Design</li>
+            <li>Mobile App Development</li>
+        </ul>
+    </div>
+    <div id="tabs-ketiga">
+        <p>
+            Jquery ui merupakan library yang di kembangkan dari jquery. Jquery ui di khususkan untuk bagian front-end atau bagian user interface.
+            Jquery ui menyediakan beberapa effect yang di kembangkan dari jquery dan juga beberapa widget yang sangat berguna, 
+            tinggal di gunakan dengan memberikan fungsi yang telah di sediakan oleh jquery ui.
+        </p>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+</html>
